@@ -18,6 +18,7 @@ This repository contains the scripts needed to generate the figures and analysis
 <hr>
 This single center retrospective study examines the phylogenetics of SARS-CoV-2 in light of patient demographics and clinical outcomes over a two-year period during the COVID-19 pandemic in Chicago.  Between March 17th, 2020 to March 17th, 2022, 14,252 residual diagnostic nasopharyngeal swabs were collected from adult patients; of which 2,114 were subjected to whole genome sequencing.  Surges in case counts correlated highly with the emergence of new variants and five unique waves were identified over the two-year period. Analysis of electronic health records revealed that clade, sex, race, age, number of comorbidities and vaccination doses before infection play an important role in determining patient admission to the hospital.  Statistical analysis also revealed that viral load is associated with clade and vaccination status.  When considering the evolution in the standard of care and seasonality, viral clade was not significantly associated with outcome, disease severity, or clinical lab values among hospitalized patients.
 
+
 # Dependencies
 <hr>
 Python
