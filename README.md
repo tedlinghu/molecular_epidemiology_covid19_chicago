@@ -46,6 +46,26 @@ TreeTime v0.7.6
 # Data
 <hr>
 
+### Figure 1
+
+<a href="https://github.com/tedlinghu/molecular_epidemiology_covid19_chicago/blob/main/Data/chicago_hosp_cdph.csv">Chicago hospitalizations from CDPH</a> 
+
+<a href="https://github.com/tedlinghu/molecular_epidemiology_covid19_chicago/blob/main/Data/chicago_hosp_idph.csv">Chicago hospitalizations from IDPH</a>
+
+<a href="https://github.com/tedlinghu/molecular_epidemiology_covid19_chicago/blob/main/Data/chicago_cases_test_desths_idph.csv.csv">Chicago cases and deaths from IDPH</a>
+
+<a href="https://github.com/tedlinghu/molecular_epidemiology_covid19_chicago/blob/main/Data/cook_county_cases_test_desths_idph.csv">Cook County cases and deaths from IDPH</a>
+
+<a href="https://github.com/tedlinghu/molecular_epidemiology_covid19_chicago/blob/main/Data/chicago_vax_idph.csv">Chicago vaccination from IDPH</a>
+
+<a href="https://github.com/tedlinghu/molecular_epidemiology_covid19_chicago/blob/main/Data/cook_vax_idph.csv">Cook County vaccination from IDPH</a>
+
+### Figure 2
+
+<a href="https://github.com/tedlinghu/molecular_epidemiology_covid19_chicago/blob/main/Data/cook_county_clades_gisaid.csv">Cook County clades from GISAID</a>
+
+<a href="https://github.com/tedlinghu/molecular_epidemiology_covid19_chicago/blob/main/Data/cook_chicago_cases_idph.csv">Cook County and Chicago cases from IDPH</a>
+
 
 # Phylogenetic analyses
 
@@ -65,3 +85,10 @@ treetime --confidence --relax 1.0 0.5 --aln Aligned.fasta --tree Aligned.fasta.t
 #### Use Clade, US state, or Country depending on the phylogeny
 
 treetime mugration --tree TreeTime_Out/timetree.nexus --states geo.csv --attribute geo_loc 
+
+### Sequence IDs from GISAID
+
+<a href="https://github.com/tedlinghu/molecular_epidemiology_covid19_chicago/blob/main/Data/usa_sequenceid_gisaid.csv">USA sequence ID from GISAID</a>
+
+<a href="https://github.com/tedlinghu/molecular_epidemiology_covid19_chicago/blob/main/Data/global_sequenceid_gisaid.csv">Global sequence ID from GISAID</a>
+
