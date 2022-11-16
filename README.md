@@ -8,14 +8,60 @@ This repository contains the scripts needed to generate the figures and analysis
 
 # Highlights
 <hr>
+<ul>
+  <li>The second confirmed case of SARS-CoV-2 was discovered in Chicago. </li>
+  <li>Since then, Chicago has accumulated over 1.4 million cases and 15,000 deaths.</li>
+  <li>Genomic surveillance conducted by Northwestern University reveals that when accounting for epidemiolpogical, demographic and clinical (including vaccination) data, viral clades are not significantly associated with clinical severity.</li>
+</ul>
 
 # Summary
 <hr>
+This single center retrospective study examines the phylogenetics of SARS-CoV-2 in light of patient demographics and clinical outcomes over a two-year period during the COVID-19 pandemic in Chicago.  Between March 17th, 2020 to March 17th, 2022, 14,252 residual diagnostic nasopharyngeal swabs were collected from adult patients; of which 2,114 were subjected to whole genome sequencing.  Surges in case counts correlated highly with the emergence of new variants and five unique waves were identified over the two-year period. Analysis of electronic health records revealed that clade, sex, race, age, number of comorbidities and vaccination doses before infection play an important role in determining patient admission to the hospital.  Statistical analysis also revealed that viral load is associated with clade and vaccination status.  When considering the evolution in the standard of care and seasonality, viral clade was not significantly associated with outcome, disease severity, or clinical lab values among hospitalized patients.
 
 # Dependencies
 <hr>
+Python
+<ul>
+  <li> Pandads </li>
+  <li> Numpy </li>
+  <li> statsmodels </li>
+  <li> scipy </li>
+</ul>
+R
+<ul>
+  <li> dplyr </li>
+  <li> emmeans </li>
+</ul>
+
+MAFFT v7.453
+
+MEGAX v10.1.8.69
+
+IQ-Tree v2.0.5
+<ul>
+  <li> ModelFinder </li>
+</ul>
+TreeTime v0.7.6
 
 # Data
 <hr>
 
+
 # Phylogenetic analyses
+
+### Alignment
+
+mafft --auto --thread -1 --keeplength --addfragments Sequences.fasta NC_045512.fasta > Aligned.fasta
+
+### IQtree2 ML Phylogenies
+
+iqtree2 -s Aligned.fasta -T AUTO --alrt 1000 #for Chicago phylogeny also -B 1000 was used
+
+### Treetime
+
+treetime --confidence --relax 1.0 0.5 --aln Aligned.fasta --tree Aligned.fasta.treefile --dates dates.csv --coalescent skyline --clock-filter 4 --clock-rate 0.0008 --clock-std-dev 0.0004 --branch-length-mode marginal
+
+### Mugration (for ancestral state reconstruction)
+#### Use Clade, US state, or Country depending on the phylogeny
+
+treetime mugration --tree TreeTime_Out/timetree.nexus --states geo.csv --attribute geo_loc 
