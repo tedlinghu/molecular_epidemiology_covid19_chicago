@@ -32,6 +32,12 @@ R
 <ul>
   <li> dplyr </li>
   <li> emmeans </li>
+  <li> treeio </li>
+  <li> ggtree </li>
+  <li> emmeapeans </li>
+  <li> ggtreeExtra </li>
+  <li> ggplot2 </li>
+  <li> RColorBrewer </li>
 </ul>
 
 MAFFT v7.453
