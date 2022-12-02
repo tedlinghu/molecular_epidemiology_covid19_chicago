@@ -23,7 +23,7 @@ This single center retrospective study examines the phylogenetics of SARS-CoV-2 
 <hr>
 Python
 <ul>
-  <li> Pandads </li>
+  <li> Pandas </li>
   <li> Numpy </li>
   <li> statsmodels </li>
   <li> scipy </li>
