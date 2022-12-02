@@ -106,3 +106,5 @@ treetime mugration --tree TreeTime_Out/timetree.nexus --states geo.csv --attribu
 
 <a href="https://github.com/tedlinghu/molecular_epidemiology_covid19_chicago/blob/main/Data/global_sequenceid_gisaid.csv">Global sequence ID from GISAID</a>
 
+<a href="https://github.com/tedlinghu/molecular_epidemiology_covid19_chicago/blob/main/Data/final_sequences_accession_IDs.xlsx
+">Accession IDs for sequences from Northwestern</a>
