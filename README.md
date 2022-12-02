@@ -27,6 +27,13 @@ Python
   <li> Numpy </li>
   <li> statsmodels </li>
   <li> scipy </li>
+  <li> collections </li>
+  <li> itertools </li>
+  <li> datetime </li>
+  <li> sklearn </li>
+  <li> seaborn </li>
+  <li> math </li>
+  <li> matplotlib </li>
 </ul>
 R
 <ul>
